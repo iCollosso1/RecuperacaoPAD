@@ -1,0 +1,18 @@
+export const InitialState={
+Tarefas: [],
+
+}
+
+export const UserReducer = (state, action)=>{
+
+switch(action.type){
+    case 'SET_AVATAR':
+        return{...state, avatar: action.payload.avatar}
+    break;
+
+    default:
+        return state;
+}
+
+
+}
