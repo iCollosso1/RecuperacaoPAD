@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { TouchableOpacity, Keyboard, Alert, AsyncStorage} from 'react-native';
 import { MaterialIcons} from "@expo/vector-icons";
-import { Container, Header, TitleText, Box, Tarefa, Input, Button, List, TextButton, Body, ContentBox, ContentItem, TaskTitle, TextTask } from './styles';
+import { Container, Header, TitleText, TitleSubText, Box, Tarefa, Input, Button, List, TextButton, Body, ContentBox, ContentItem, TaskTitle, TextTask } from './styles';
 
 
 export default function App() {
@@ -62,13 +62,14 @@ export default function App() {
       <Container>
         <Header>
           <TitleText> Aplicativo ToDoList </TitleText>
+          <TitleSubText> {task.length} tarefas registradas </TitleSubText>
         </Header>
       
         <Box>
-          <Tarefa> Adicione aqui uma Tarefa </Tarefa>
+          <Tarefa> Nova Tarefa </Tarefa>
           
           <Input placeholderTextColor="#999"
-            autoCorrect={true} placeholder="Tarefa"
+            autoCorrect={true} placeholder="Escreva algo"
             maxLength={30} onChangeText=
             {text => setNewTask(text)} value={newTask}
           />
@@ -91,7 +92,7 @@ export default function App() {
                           <MaterialIcons name="storage" size={32} color="black" />
                       </TouchableOpacity>
                                     
-                      <TaskTitle> Tarefa </TaskTitle>
+                      <TaskTitle> Tarefa {task.length} </TaskTitle>
 
                       <TouchableOpacity onPress={() => removeTask(item)}>
                           <MaterialIcons name="close" size={32} color="#f64c75" />

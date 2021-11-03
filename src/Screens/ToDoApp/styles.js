@@ -19,15 +19,16 @@ export const Header = styled.View`
 `;
 
 export const TitleText = styled.Text`
-    font-size: 24;
+    font-size: 24px;
     margin-top: 100px;
+    font-weight: bold;
 `;
 
 export const Box = styled.View`
-    width: 315;
-    height: 206;
-    margin-top: 40;
-    border-radius: 20;
+    width: 315px;
+    height: 206px;
+    margin-top: 40px;
+    border-radius: 20px;
     align-self: center;
     align-items: center;
     align-content: center;
@@ -36,39 +37,39 @@ export const Box = styled.View`
 `
 
 export const Tarefa = styled.Text`
-    height: 50;
-    font-size: 24;
-    margin-top: 18;
+    height: 50px;
+    font-size: 24px;
+    margin-top: 18px;
     align-self: center;
 `
 
 export const Input = styled.TextInput`
-    margin-top: -10;
-    width: 272;
-    height: 59;
-    border-radius: 4;
+    margin-top: -10px;
+    width: 272px;
+    height: 59px;
+    border-radius: 4px;
     padding: 5px 10px;
     background: #E5E5E5;
 `
 
 export const Button = styled.TouchableOpacity`
-  width: 271;
-  height: 38;
-  margin-top: 25;
-  border-radius: 4;
+  width: 271px;
+  height: 38px;
+  margin-top: 25px;
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
   background: #6200EE;
 `
 
 export const TextButton = styled.Text`
-    font-size: 18;
+    font-size: 18px;
     color: #FFFFFF;
 `
 
 export const List = styled.FlatList`
     flex: 1;
-    margin-top: 5;
+    margin-top: 5px;
 `
 
 export const Body = styled.View`
@@ -87,24 +88,31 @@ export const Body = styled.View`
     border-width: 1px;
     border-radius: 4px;
     border-radius: 20px;
-    border-color: #eee;
     background: #eee;
+    border: 1px solid #6200EE;
 `
 
 export const ContentItem = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+ 
   
 `
 
 export const TaskTitle = styled.Text`
-    font-size: 24;
+    font-size: 24px;
     font-weight: bold;
 `
 
 export const TextTask = styled.Text`
-    font-size: 14;
-    padding-top: 20;
+    font-size: 14px;
+    padding-top: 20px;
     color: #757575;
 `
+export const TitleSubText = styled.Text`
+
+font-size: 20px;
+ color:#6200EE;
+
+`;
