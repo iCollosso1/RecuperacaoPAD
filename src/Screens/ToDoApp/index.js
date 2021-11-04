@@ -92,7 +92,7 @@ export default function App() {
                           <MaterialIcons name="storage" size={32} color="black" />
                       </TouchableOpacity>
                                     
-                      <TaskTitle> Tarefa {task.length} </TaskTitle>
+                      <TaskTitle> Tarefa com {item.length} caracteres</TaskTitle>
 
                       <TouchableOpacity onPress={() => removeTask(item)}>
                           <MaterialIcons name="close" size={32} color="#f64c75" />
@@ -100,7 +100,7 @@ export default function App() {
                   </ContentItem> 
                                 
                   <TextTask> {item} </TextTask>
-                                {/* <Text>{item}</Text> */}
+                               
               </ContentBox>
             )}
           />

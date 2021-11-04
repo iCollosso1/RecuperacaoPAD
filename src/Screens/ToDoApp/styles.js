@@ -101,14 +101,19 @@ export const ContentItem = styled.View`
 `
 
 export const TaskTitle = styled.Text`
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+   
 `
 
 export const TextTask = styled.Text`
-    font-size: 14px;
-    padding-top: 20px;
+    font-size: 18px;
+    padding-top: 5px;
     color: #757575;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding-bottom: 35px;
+    padding-left: 5px;
 `
 export const TitleSubText = styled.Text`
 
